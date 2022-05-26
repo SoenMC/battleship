@@ -1,19 +1,20 @@
 package co.edu.umanizales.battleship.model;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.validation.Valid;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 @Data
-@AllArgsConstructor
-public class TypeUser {
+public class PlayerDTO {
     @NotNull
-    private int code;
+    @Min(1)
+    @Max(2)
+    private byte numPlayer;
     @Valid
     @NotNull
-    private String description;
-
+    private User player;
 }

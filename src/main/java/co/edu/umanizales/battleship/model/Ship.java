@@ -9,10 +9,11 @@ import lombok.Data;
 public class Ship {
     private int id;
     private String name;
-    private byte sizeShip;
+    private byte numPlaces;
 
-    public Ship(String name, byte sizeShip) {
+    public Ship(String name, byte numPlaces) {
         this.name = name;
-        this.sizeShip = sizeShip;
+        this.numPlaces = numPlaces;
     }
+
 }

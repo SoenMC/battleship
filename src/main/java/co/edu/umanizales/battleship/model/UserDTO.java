@@ -9,11 +9,12 @@ import javax.validation.constraints.NotNull;
 
 @Data
 @AllArgsConstructor
-public class TypeUser {
+public class UserDTO {
     @NotNull
-    private int code;
+    private String email;
     @Valid
     @NotNull
-    private String description;
+    private String typeUser;
+
 
 }
